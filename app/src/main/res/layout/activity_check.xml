@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/check"></android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前坐标："
+            />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/latlng_tv"
+            android:layout_width="match_parent"
+            android:text="0f,0f"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前距离："
+            />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/distance_tv"
+            android:layout_width="match_parent"
+            android:text="0"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextClock
+            android:id="@+id/start_time_tc"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/time_shadow_grey"
+            android:format24Hour="@string/format24"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/time_shadow_grey"
+            android:drawableLeft="@drawable/check"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/check_location_in"
+            android:textSize="12sp" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/check_btn"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_check_btn"
+        android:enabled="false"
+        android:text="@string/check_in"
+        android:textColor="@color/white" />
+
+</LinearLayout>

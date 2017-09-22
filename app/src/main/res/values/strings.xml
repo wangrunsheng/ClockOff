@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Clock Off</string>
+    <string name="textview">TextView</string>
+    <string name="check">Check</string>
+    <string name="check_in">Check in</string>
+    <string name="fake_location">Guangdong Province</string>
+    <string name="refresh">Refresh</string>
+    <string name="check_off">Check off</string>
+    <string name="format24">HH:mm:ss</string>
+    <string name="check_location_in">In check area</string>
+    <string name="check_location_out">Out of check area</string>
+    <string name="storage_directory">wangrunsheng</string>
+</resources>
